@@ -45,8 +45,7 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    public void resize(double percent) {
-        this.width = this.width*percent/100;
-        this.length = this.length*percent/100;
+    public String howToColor() {
+        System.out.println("");
     }
 }
