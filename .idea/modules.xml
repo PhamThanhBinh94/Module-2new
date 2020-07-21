@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/DSA-List/DSA-List.iml" filepath="$PROJECT_DIR$/DSA-List/DSA-List.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA-Stack,Queue/DSA-Stack,Queue.iml" filepath="$PROJECT_DIR$/DSA-Stack,Queue/DSA-Stack,Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Inheritance1/Inheritance1.iml" filepath="$PROJECT_DIR$/Inheritance1/Inheritance1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaCollectionFramework/JavaCollectionFramework.iml" filepath="$PROJECT_DIR$/JavaCollectionFramework/JavaCollectionFramework.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module2.iml" filepath="$PROJECT_DIR$/Module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA-List/test.iml" filepath="$PROJECT_DIR$/DSA-List/test.iml" />
     </modules>
