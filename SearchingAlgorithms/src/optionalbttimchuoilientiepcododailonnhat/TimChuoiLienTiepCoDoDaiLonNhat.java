@@ -1,9 +1,9 @@
-package baitaptimchuoitangdancododailonnhat;
+package optionalbttimchuoilientiepcododailonnhat;
 
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class TimChuoiTangDanCoDoDaiLonNhat {
+public class TimChuoiLienTiepCoDoDaiLonNhat {
     public static void main(String[] args) {
         //Create a Scanner
         Scanner input = new Scanner(System.in);
@@ -13,25 +13,25 @@ public class TimChuoiTangDanCoDoDaiLonNhat {
         String string = input.nextLine();
 
         LinkedList<Character> max = new LinkedList<>();
+        LinkedList<Character> list = new LinkedList<>();
 
         //Find the maxium increasingly ordered subsequence
         for (int i =0; i < string.length();i++)
         {
-            LinkedList<Character> list = new LinkedList<>();
-            list.add(string.charAt(i));
-            for (int j= i + 1; j < string.length(); j++){
-                if (string.charAt(j) > list.getLast()){
-                    list.add(string.charAt(j));
-                }
+            if (list.size() > 0 && string.charAt(i) > list.getLast()) {
+                list.add(string.charAt(i));
+            } else {
+                list.clear();
+                list.add(string.charAt(i));
             }
+
             if (list.size() > max.size()){
                 max.clear();
                 max.addAll(list);
             }
-            list.clear();
         }
         for (Character ch: max){
-            System.out.println(ch);
+            System.out.print(ch);
         }
         System.out.println();
     }
