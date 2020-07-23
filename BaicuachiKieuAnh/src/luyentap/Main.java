@@ -1,5 +1,6 @@
 package luyentap;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.function.DoubleToIntFunction;
 
@@ -49,6 +50,20 @@ public class Main {
                 System.out.println(store[i].getPrice());
         }
 
-
+        boolean needNextPass = true;
+        for (int k=1;k<store.length && needNextPass;k++){
+            needNextPass=false;
+            for (int i=0; i <store.length;i++){
+                if (store[i].getPrice() > store[i + 1].getPrice()) {
+//                    System.out.println("Swap " +store[i] + "with" + store[i+1]);
+                    Book temp = store[i];
+                    store[i] = store[i + 1];
+                    store[i + 1] = temp;
+                    needNextPass = true;
+                }
+            }
+        }
+        for (Book value : store)
+            System.out.println("Name: " + value.getName() + "Price: " + value.getPrice());
     }
 }
