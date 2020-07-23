@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaCollectionFramework/JavaCollectionFramework.iml" filepath="$PROJECT_DIR$/JavaCollectionFramework/JavaCollectionFramework.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module2.iml" filepath="$PROJECT_DIR$/Module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SearchingAlgorithms/SearchingAlgorithms.iml" filepath="$PROJECT_DIR$/SearchingAlgorithms/SearchingAlgorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting Algorihms/Sorting Algorihms.iml" filepath="$PROJECT_DIR$/Sorting Algorihms/Sorting Algorihms.iml" />
       <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA-List/test.iml" filepath="$PROJECT_DIR$/DSA-List/test.iml" />
     </modules>
