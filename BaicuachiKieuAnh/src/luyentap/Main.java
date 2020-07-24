@@ -27,6 +27,7 @@ public class Main {
         store[7] = book8;
         store[8] = book9;
         store[9] = book10;
+        System.out.println(book1.getName().compareTo(book3.getName()));
         double sum =0;
         int count =0;
         for (int i=0;i <store.length;i++){
@@ -49,13 +50,26 @@ public class Main {
             if (name.equals(store[i].getName()))
                 System.out.println(store[i].getPrice());
         }
+        //BubbleSort
+//        boolean needNextPass = true;
+//        for (int k=1;k<store.length && needNextPass;k++){
+//            needNextPass=false;
+//            for (int i=0; i <store.length-k;i++){
+//                if (store[i].getPrice() > store[i + 1].getPrice()) {
+//                    Book temp = store[i];
+//                    store[i] = store[i + 1];
+//                    store[i + 1] = temp;
+//                    needNextPass = true;
+//                }
+//            }
+//        }
 
+//        BubbleSort
         boolean needNextPass = true;
         for (int k=1;k<store.length && needNextPass;k++){
             needNextPass=false;
-            for (int i=0; i <store.length;i++){
-                if (store[i].getPrice() > store[i + 1].getPrice()) {
-//                    System.out.println("Swap " +store[i] + "with" + store[i+1]);
+            for (int i=0; i <store.length-k;i++){
+                if (store[i].getName().compareTo(store[i + 1].getName()) > 0) {
                     Book temp = store[i];
                     store[i] = store[i + 1];
                     store[i + 1] = temp;
@@ -63,7 +77,68 @@ public class Main {
                 }
             }
         }
+
+        //InsertionSort
+//        for (int i=1;i<store.length;i++){
+//            Book currentElement = store[i];
+//            int k;
+//            for (k=i-1; k>=0 && store[k].getPrice() > currentElement.getPrice();k--){
+//                store[k+1] = store[k];
+//            }
+//            store[k+1] = currentElement;
+//        }
+
+        //SelectionSort
+//        for (int i =0; i < store.length-1;i++){
+//            double minPrice = store[i].getPrice();
+//            int minPriceIndex = i;
+//            for (int j=i+1; j<store.length; j++){
+//                if (minPrice > store[j].getPrice()){
+//                    minPrice = store[j].getPrice();
+//                    minPriceIndex = j;
+//                }
+//            }
+//            if (minPriceIndex != i){
+//                Book temp = store[i];
+//                store[i] = store[minPriceIndex];
+//                store[minPriceIndex] = temp;
+//            }
+//        }
         for (Book value : store)
             System.out.println("Name: " + value.getName() + "Price: " + value.getPrice());
+
+
+        System.out.println("Nhập giá của của cuốn sách để ra tên của cuốn sách tại đây");
+//        double price = sc.nextDouble();
+//        int low=0;
+//        int high= store.length-1;
+//        boolean checker = false;
+//        while(!checker && high>= low){
+//            int mid = (low +high)/2;
+//            if (price < store[mid].getPrice())
+//                high = mid-1;
+//            else if (price == store[mid].getPrice()) {
+//                System.out.println("The book is: " + store[mid].getName());
+//                checker = true;
+//            }
+//            else low = mid +1;
+//        }
+//        sc.nextLine();
+        String name1 = sc.next();
+        int low=0;
+        int high= store.length-1;
+        boolean checkName = false;
+        while(!checkName && high>= low){
+            int mid = (low +high)/2;
+            if (name1.compareTo(store[mid].getName()) < 0 )
+                high = mid-1;
+            else if (name1.compareTo(store[mid].getName()) == 0) {
+                System.out.println("The price of book is: " + store[mid].getPrice());
+                checkName = true;
+            }
+            else low = mid +1;
+        }
+//        return -1;
     }
+
 }
