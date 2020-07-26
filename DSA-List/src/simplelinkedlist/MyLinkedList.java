@@ -1,13 +1,11 @@
 package simplelinkedlist;
 
-import javax.xml.soap.Node;
-
-public class MyLinkedList {
+class MyLinkedList {
     private Node head;
     private int numNudes;
     private Object data;
 
-    public MyLinkedList(Object data){
+    public void MyLinkedList(Object data){
         head = new Node(data);
     }
 
