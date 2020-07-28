@@ -12,7 +12,7 @@ public class CopyFile {
             int line;
             int count = 0;
             while ((line=input.read())!=-1) {
-                System.out.println(line);
+//                System.out.println(line);
                 output.write(line);
                 count++;
             }

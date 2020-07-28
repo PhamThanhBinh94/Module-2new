@@ -71,19 +71,19 @@ public class MyLinkedList {
     }
 
     public void remove(int index){
-        Node removeElement;
+        Node temp;
         if (index ==0){
             removeFirst();
         } else if (index==numNodes){
             removeLast();
         } else {
-            removeElement = head;
+            temp = head;
             int i = 0;
             while (i < index -1){
-                removeElement = removeElement.next;
+                temp = temp.next;
                 i++;
             }
-            removeElement.next = removeElement.next.next;
+            temp.next = temp.next.next;
             numNodes--;
         }
     }
