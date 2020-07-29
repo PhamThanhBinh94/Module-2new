@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/SearchingAlgorithms/SearchingAlgorithms.iml" filepath="$PROJECT_DIR$/SearchingAlgorithms/SearchingAlgorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sorting Algorihms/Sorting Algorihms.iml" filepath="$PROJECT_DIR$/Sorting Algorihms/Sorting Algorihms.iml" />
       <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threading/Threading.iml" filepath="$PROJECT_DIR$/Threading/Threading.iml" />
       <module fileurl="file://$PROJECT_DIR$/XulyNgoaiLevaDebug/XulyNgoaiLevaDebug.iml" filepath="$PROJECT_DIR$/XulyNgoaiLevaDebug/XulyNgoaiLevaDebug.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA-List/test.iml" filepath="$PROJECT_DIR$/DSA-List/test.iml" />
     </modules>
