@@ -6,6 +6,5 @@ public class TestPrime {
         OptimizedPrimeFactorization optimizedPrimeFactorization = new OptimizedPrimeFactorization();
         optimizedPrimeFactorization.start();
         lazyPrimeFactorization.start();
-
     }
 }

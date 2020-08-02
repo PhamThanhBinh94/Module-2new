@@ -4,7 +4,7 @@ public class LazyPrimeFactorization extends Thread {
     @Override
     public void run() {
 
-       for (int i=0;i<50;i++){
+       for (int i=0;i<1000;i++){
            if (isPrimeNumber(i)){
                System.out.println("LazyPrimeFactorization find prime number is :" +i);
            }

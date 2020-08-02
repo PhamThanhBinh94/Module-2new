@@ -3,7 +3,7 @@ package optionalbaitaptimsonguyento;
 public class OptimizedPrimeFactorization extends Thread {
     @Override
     public void run() {
-        for (int i=0;i<100;i++){
+        for (int i=0;i<1000;i++){
             if (isPrimeNumber(i)){
                 System.out.println("OptimizedPrimeFactorization find prime is :" +i);
             }
