@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/java-cleancode-refactoring-renaming" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VongLapTrongJava/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/java-cleancode-refactoring-exercise" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LopVaDoiTuongJava" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
